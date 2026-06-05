@@ -40,7 +40,7 @@ body:
     id: related_links
     attributes:
       label: 関連リンク・Issue / Related Links & Issues
-      description: 関連するIssue番号（例: #123）や、仕様書・デザインツールのURLがあれば記述してください。
+      description: "関連するIssue番号（例: #123）や、仕様書・デザインツールのURLがあれば記述してください。"
       placeholder: "例: #12, https://figma.com/..."
     validations:
       required: false
