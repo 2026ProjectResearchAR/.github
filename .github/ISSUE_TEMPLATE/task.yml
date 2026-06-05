@@ -1,0 +1,53 @@
+name: タスク / Task
+description: 新しい作業タスク、機能実装、または仕様変更の追跡用
+title: "[Task]: "
+labels: ["todo", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        タスクの新規作成
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要 / Overview
+      description: このタスクで達成したい目的や、実装する内容の背景を簡潔に記述
+      placeholder: "例: ユーザー管理画面にCSVエクスポート機能を追加する"
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 必要な対応・作業内容 / Tasks
+      description: 具体的にどのような作業を行うか、チェックリスト形式で記述
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: 達成基準 / Acceptance Criteria
+      description: 何が完了したらこのIssueをクローズ（完了）できるかを記述
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: related_links
+    attributes:
+      label: 関連リンク・Issue / Related Links & Issues
+      description: 関連するIssue番号（例: #123）や、仕様書・デザインツールのURLがあれば記述してください。
+      placeholder: "例: #12, https://figma.com/..."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考 / Notes
+      description: その他、開発時の注意点や参考資料、懸念点などがあれば記述してください。
+    validations:
+      required: false
