@@ -1,12 +1,12 @@
 name: タスク / Task
 description: 新しい作業タスク、機能実装、または仕様変更の追跡用
 title: "[Task]: "
-labels: ["todo", "enhancement"]
+labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        タスクの新規作成
+        "# タスクの新規作成"
   - type: textarea
     id: overview
     attributes:
