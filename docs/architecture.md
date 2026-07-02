@@ -21,7 +21,7 @@ graph TD
     %% バックエンド
     subgraph Backend ["バックエンド & インフラ (Supabase)"]
         API["API エンドポイント"]
-        DB[/"データベース<br/>(施設情報, 3Dマップ, IoTログ)"/]
+        DB[/"データベース<br/>(施設情報, , IoTログ)"/]
         Prediction["混雑需要予測ロジック"]
         
         API <--> DB
